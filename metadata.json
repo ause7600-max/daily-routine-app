@@ -1,0 +1,5 @@
+{
+  "name": "Daily Routine Tracker",
+  "description": "A simple, modern daily routine tracker with alarms, progress tracking, and a clean dashboard.",
+  "requestFramePermissions": ["notifications"]
+}

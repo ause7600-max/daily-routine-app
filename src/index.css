@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-brand-50: #FFDBFD;
+  --color-brand-100: #C9BEFF;
+  --color-brand-500: #8494FF;
+  --color-brand-600: #6367FF;
+  --color-brand-700: #4F52CC;
+
+  /* Theme-based colors */
+  --color-app-bg: var(--app-bg);
+  --color-app-text: var(--app-text);
+  --color-header-bg: var(--header-bg);
+  --color-header-border: var(--header-border);
+}
+
+@layer base {
+  :root {
+    --app-bg: #f8fafc; /* slate-50 */
+    --app-text: #0f172a; /* slate-900 */
+    --header-bg: #ffffff;
+    --header-border: #e2e8f0; /* slate-200 */
+  }
+
+  .dark {
+    --app-bg: #020617; /* slate-950 */
+    --app-text: #e2e8f0; /* slate-200 */
+    --header-bg: #000000;
+    --header-border: #1e293b; /* slate-800 */
+  }
+
+  body {
+    @apply bg-app-bg text-app-text font-sans antialiased transition-colors duration-500;
+  }
+}
+
+.glass {
+  @apply bg-header-bg border-b border-header-border shadow-sm;
+}
+
