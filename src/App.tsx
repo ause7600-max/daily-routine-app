@@ -1,6 +1,9 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
+ * 
+ * Daily Routine Tracker App
+ * Last updated: Ready for GitHub export
  */
 
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
